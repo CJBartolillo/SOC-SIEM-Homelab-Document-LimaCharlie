@@ -23,7 +23,22 @@ Ubuntu Server machine:
 
 The first step involved generating a malicious payload using Sliver and deploying it to the Windows endpoint. Once executed, the payload established a command and control session between the attack machine and victim, allowing for remote access and system enumeration.
 
-![Payload Generation](screenshots/payload-generation.png)
+Using SSH to access the Ubuntu server to download and launch Sliver to begin the process of delivering the payload.
+![image](https://github.com/user-attachments/assets/e27f3c05-568c-40b7-8fec-2216e4fe9bb3)
+![image](https://github.com/user-attachments/assets/cca6d055-ff7b-4c25-8809-afe23d941328)
+Verifying we have established a session between the two machines after the Windows machine downloaded the payload via a python3 http webserver.
+![image](https://github.com/user-attachments/assets/b60e575e-fe56-471b-9add-e722e01b5c16)
+Running commands to simulate attacker poking around for information
+![image](https://github.com/user-attachments/assets/d69d2ce1-3bc1-45e0-9de0-40bbcd4845cf)
+ps -T command which Sliver highlights any defensive processes in red and its own process in green.
+![image](https://github.com/user-attachments/assets/cbb0395c-07b5-4243-b2b0-a9ed7f898867)
+
+
+
+
+
+
+
 
 ## Phase 2: Attack Simulation and Detection
 
