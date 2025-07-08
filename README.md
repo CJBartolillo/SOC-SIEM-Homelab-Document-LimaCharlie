@@ -1,1 +1,1 @@
-# SOC-SIEM-Homelab-Document
+# EDR Homelab: Attack and Defense
