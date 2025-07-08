@@ -97,9 +97,9 @@ After running a second lsass dump command, our detection rule has picked up and 
 ![image](https://github.com/user-attachments/assets/32879607-246f-4568-b6a7-750598f3f759)
 Creating telemetry for deleting shadow copies, a common ransomware method. We are going to create a blocking rule to try prevent this in the future.
 ![image](https://github.com/user-attachments/assets/e9124598-3a4a-4b87-81bf-d155e03edbbf)
-creating detection rule based off a sigma detection signature, added the response section to hopefully block and prevent this adverserial tactic in the future
+Creating detection rule based off a sigma detection signature, added the response section to hopefully block and prevent this adverserial tactic in the future
 ![image](https://github.com/user-attachments/assets/6cd31532-5404-43ce-adad-31e19d7fc937)
-the D&R rule worked by showing the practical result - the LSASS command failed and the shell exited, proving the automated blocking was successful.
+The D&R rule worked by showing the practical result - the LSASS command failed and the shell exited, proving the automated blocking was successful.
 ![image](https://github.com/user-attachments/assets/c7970963-4506-4d30-b44e-47b049a9ec22)
 
 
