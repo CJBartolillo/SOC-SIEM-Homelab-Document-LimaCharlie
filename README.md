@@ -122,22 +122,24 @@ the D&R rule worked by showing the practical result - the LSASS command failed a
 - **Windows 11:** Target endpoint
 - **VirusTotal:** Malware analysis and threat intelligence
 
-Conclusion and Key Learnings
+## Conclusion and Key Learnings
+
 This SOC homelab successfully demonstrated end-to-end security operations from threat detection through automated response. The project provided hands-on experience with industry-standard tools and realistic attack scenarios.
-Key technical skills developed:
 
-SIEM configuration and custom detection rule creation
-Threat hunting and behavioral analysis techniques
-Incident response and automated threat containment
-Malware analysis and threat intelligence integration
+**Key technical skills developed:**
+- SIEM configuration and custom detection rule creation
+- Threat hunting and behavioral analysis techniques
+- Incident response and automated threat containment
+- Malware analysis and threat intelligence integration
 
-Critical insights gained:
-
-Behavioral detection is more effective than signature-based approaches for unknown threats
-Proper alert tuning is essential to reduce false positives while maintaining detection coverage
-Automated response capabilities significantly improve threat containment speed
-Comprehensive logging and telemetry collection are fundamental to effective threat detection
+**Critical insights gained:**
+- Behavioral detection is more effective than signature-based approaches for unknown threats
+- Proper alert tuning is essential to reduce false positives while maintaining detection coverage
+- Automated response capabilities significantly improve threat containment speed
+- Comprehensive logging and telemetry collection are fundamental to effective threat detection
 
 This practical experience demonstrates readiness for SOC analyst responsibilities and provides a strong foundation for advanced security operations roles.
 
-This project was completed in an isolated lab environment following ethical guidelines and best practices.
+---
+
+*This project was completed in an isolated lab environment following ethical guidelines and best practices.*
