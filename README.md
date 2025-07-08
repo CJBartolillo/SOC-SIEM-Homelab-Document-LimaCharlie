@@ -28,10 +28,7 @@ Using SSH to access the Ubuntu server to download and launch Sliver to begin the
 ![image](https://github.com/user-attachments/assets/cca6d055-ff7b-4c25-8809-afe23d941328)
 Verifying we have established a session between the two machines after the Windows machine downloaded the payload via a python3 http webserver.
 ![image](https://github.com/user-attachments/assets/b60e575e-fe56-471b-9add-e722e01b5c16)
-Running commands to simulate attacker poking around for information
-![image](https://github.com/user-attachments/assets/d69d2ce1-3bc1-45e0-9de0-40bbcd4845cf)
-ps -T command which Sliver highlights any defensive processes in red and its own process in green.
-![image](https://github.com/user-attachments/assets/cbb0395c-07b5-4243-b2b0-a9ed7f898867)
+
 
 
 
@@ -44,7 +41,10 @@ ps -T command which Sliver highlights any defensive processes in red and its own
 
 With an active C2 session established, various attack techniques were executed including privilege escalation attempts, system reconnaissance, and process enumeration. LimaCharlie provided real-time telemetry showing the attacker's activities, IP connections, and running processes on the endpoint.
 
-![Attack Detection](screenshots/attack-detection.png)
+Running commands to simulate attacker poking around for information
+![image](https://github.com/user-attachments/assets/d69d2ce1-3bc1-45e0-9de0-40bbcd4845cf)
+ps -T command which Sliver highlights any defensive processes in red and its own process in green.
+![image](https://github.com/user-attachments/assets/cbb0395c-07b5-4243-b2b0-a9ed7f898867)
 
 ## Phase 3: Hash Analysis and Threat Intelligence
 
