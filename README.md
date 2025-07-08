@@ -51,12 +51,19 @@ Heading to our LimaCharlie app we can see some suspicious unsigned processes wit
 Scrolling further we can find another unsigned .exe process
 ![image](https://github.com/user-attachments/assets/103c9de8-e610-4aa5-981a-af0150e17875)
 
-Viewing the suspicious processes
+Viewing the connection reveals the attackers IP
 ![image](https://github.com/user-attachments/assets/1386574d-030a-441c-8e98-50232531659e)
-
 
 Timeline of events in LimaCharlie viewing the suspected IP Address from the attacker
 ![image](https://github.com/user-attachments/assets/41b70e0b-249b-4d58-8e02-438ea9d90e08)
+Network tab showcasing established connection to IP
+![image](https://github.com/user-attachments/assets/86794cbf-32b5-4593-8e4f-efa1de0e2e42)
+File Tab reveals the file and its location
+![image](https://github.com/user-attachments/assets/e7719b9c-51c6-488a-ae04-f916962a695e)
+
+
+
+
 
 
 
@@ -66,19 +73,45 @@ Timeline of events in LimaCharlie viewing the suspected IP Address from the atta
 
 The malicious payload was analyzed through LimaCharlie's VirusTotal integration to demonstrate hash-based detection capabilities. Since the payload was custom-generated, it appeared clean in threat intelligence feeds, highlighting the importance of behavioral detection over signature-based approaches.
 
-![Hash Analysis](screenshots/hash-analysis.png)
+Inspecting the file hash through VirusTotal reveals no results found, which to me signals an even bigger indicator that this is a malicious software
+![image](https://github.com/user-attachments/assets/95c8cbe0-ceb2-4d24-888f-7abb8452dd60)
+
 
 ## Phase 4: Credential Harvesting Simulation
 
 Advanced attack techniques were simulated, including LSASS memory dumping to extract credentials. LimaCharlie detected these sensitive process access attempts, and custom detection rules were written to identify and alert on credential theft activities.
 
-![Credential Harvesting](screenshots/credential-harvesting.png)
+Credential dumping
+![image](https://github.com/user-attachments/assets/b7e2b6fc-abaf-4444-819c-b7a199c29b3f)
+
+
 
 ## Phase 5: Detection Rule Development and Response
 
 Beyond simple detection, proactive response capabilities were implemented. Custom detection rules were created to identify and automatically block malicious activities. Ransomware simulation was performed by attempting to delete volume shadow copies, with LimaCharlie successfully detecting and blocking the attack through automated response rules.
 
-![Automated Response](screenshots/automated-response.png)
+Creating a Detection and Response rule for this specific Lsass attack
+![image](https://github.com/user-attachments/assets/668b284c-f99e-417c-964b-bc0e98af8915)
+
+After running a second lsass dump command, our detection rule has picked up and alerted us about it.
+![image](https://github.com/user-attachments/assets/32879607-246f-4568-b6a7-750598f3f759)
+Creating telemetry for deleting shadow copies, a common ransomware method. We are going to create a blocking rule to try prevent this in the future.
+![image](https://github.com/user-attachments/assets/e9124598-3a4a-4b87-81bf-d155e03edbbf)
+creating detection rule based off a sigma detection signature, added the response section to hopefully block and prevent this adverserial tactic in the future
+![image](https://github.com/user-attachments/assets/6cd31532-5404-43ce-adad-31e19d7fc937)
+The d&r rule worked because as we can see after trying to run that same lsass command, the system shell failed to return anything and after the whoami command it subsequently exited us from the shell.
+![image](https://github.com/user-attachments/assets/c7970963-4506-4d30-b44e-47b049a9ec22)
+
+
+
+
+
+
+
+
+
+
+
 
 ## Tools Used
 
