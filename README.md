@@ -99,7 +99,7 @@ Creating telemetry for deleting shadow copies, a common ransomware method. We ar
 ![image](https://github.com/user-attachments/assets/e9124598-3a4a-4b87-81bf-d155e03edbbf)
 creating detection rule based off a sigma detection signature, added the response section to hopefully block and prevent this adverserial tactic in the future
 ![image](https://github.com/user-attachments/assets/6cd31532-5404-43ce-adad-31e19d7fc937)
-The d&r rule worked because as we can see after trying to run that same lsass command, the system shell failed to return anything and after the whoami command it subsequently exited us from the shell.
+the D&R rule worked by showing the practical result - the LSASS command failed and the shell exited, proving the automated blocking was successful.
 ![image](https://github.com/user-attachments/assets/c7970963-4506-4d30-b44e-47b049a9ec22)
 
 
