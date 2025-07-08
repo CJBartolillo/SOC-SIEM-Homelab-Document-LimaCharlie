@@ -48,6 +48,9 @@ ps -T command which Sliver highlights any defensive processes in red and its own
 
 Heading to our LimaCharlie app we can see some suspicious unsigned processes within our sensor.
 ![telemetry](https://github.com/user-attachments/assets/d6c6885a-0b73-4f33-bdb1-bbd31429643b)
+Scrolling further we can find another unsigned .exe process
+![image](https://github.com/user-attachments/assets/103c9de8-e610-4aa5-981a-af0150e17875)
+
 Viewing the suspicious processes
 ![image](https://github.com/user-attachments/assets/1386574d-030a-441c-8e98-50232531659e)
 
