@@ -46,6 +46,19 @@ Running commands to simulate attacker poking around for information
 ps -T command which Sliver highlights any defensive processes in red and its own process in green.
 ![image](https://github.com/user-attachments/assets/cbb0395c-07b5-4243-b2b0-a9ed7f898867)
 
+Heading to our LimaCharlie app we can see some suspicious unsigned processes within our sensor.
+![telemetry](https://github.com/user-attachments/assets/d6c6885a-0b73-4f33-bdb1-bbd31429643b)
+Viewing the suspicious processes
+![image](https://github.com/user-attachments/assets/1386574d-030a-441c-8e98-50232531659e)
+
+
+Timeline of events in LimaCharlie viewing the suspected IP Address from the attacker
+![image](https://github.com/user-attachments/assets/41b70e0b-249b-4d58-8e02-438ea9d90e08)
+
+
+
+
+
 ## Phase 3: Hash Analysis and Threat Intelligence
 
 The malicious payload was analyzed through LimaCharlie's VirusTotal integration to demonstrate hash-based detection capabilities. Since the payload was custom-generated, it appeared clean in threat intelligence feeds, highlighting the importance of behavioral detection over signature-based approaches.
